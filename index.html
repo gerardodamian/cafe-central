@@ -1,322 +1,413 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tarjeta Digital de Comercio - Presencia web profesional para tu negocio">
-    <title>Café Central - Tu lugar favorito</title>
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/placeholder.css">
-    
-    <!-- QR Code Library -->
-    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
-</head>
-<body>
-    <!-- Loading Screen -->
-    <div id="loading" class="loading-screen">
-        <div class="loading-spinner"></div>
-        <p>Cargando...</p>
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Tarjeta Digital de Comercio - Presencia web profesional para tu negocio"
+        />
+        <title>Café Central - Tu lugar favorito</title>
 
-    <!-- Header with Navigation -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <i class="fas fa-coffee"></i>
-                    <span>Café Central</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                    <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-    </header>
+        <!-- Favicons -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="business-photo">
-                <img src="https://comprarmaquinariahosteleria.com/blog/wp-content/uploads/2022/08/como-montar-cafeteria-.jpg" alt="Café Central - Interior acogedor" id="businessImage">
-                <div class="photo-overlay"></div>
-            </div>
-            <div class="hero-text">
-                <h1 class="business-name">Café Central</h1>
-                <p class="business-tagline">El mejor café de la ciudad te espera</p>
-                <div class="hero-badges">
-                    <span class="badge open" id="statusBadge">
-                        <i class="fas fa-clock"></i> Abierto ahora
-                    </span>
-                    <span class="badge rating">
-                        <i class="fas fa-star"></i> 4.8 (250+ reseñas)
-                    </span>
-                </div>
-                <div class="hero-actions">
-                    <a href="#contacto" class="btn btn-primary">
-                        <i class="fas fa-phone"></i> Contactar
-                    </a>
-                    <button class="btn btn-secondary" id="shareBtn">
-                        <i class="fas fa-share-alt"></i> Compartir
-                    </button>
-                </div>
-            </div>
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icons -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/placeholder.css" />
+
+        <!-- QR Code Library -->
+        <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    </head>
+    <body>
+        <!-- Loading Screen -->
+        <div id="loading" class="loading-screen">
+            <div class="loading-spinner"></div>
+            <p>Cargando...</p>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="nosotros" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>Sobre Nosotros</h2>
-                <p>Conoce más sobre nuestro negocio</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Bienvenidos a Café Central</h3>
-                    <p class="business-description">
-                        Desde 1995, hemos sido el punto de encuentro favorito de la comunidad. 
-                        Ofrecemos café de especialidad, repostería artesanal y un ambiente 
-                        acogedor perfecto para trabajar, estudiar o compartir con amigos.
-                    </p>
-                    <div class="features">
-                        <div class="feature">
-                            <i class="fas fa-wifi"></i>
-                            <span>WiFi Gratis</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-leaf"></i>
-                            <span>Café Orgánico</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-birthday-cake"></i>
-                            <span>Repostería Casera</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-parking"></i>
-                            <span>Estacionamiento</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://www.elespectador.com/resizer/v2/ZKHWFCF5SNFNBBTPH23PWUUBVE.jpg?auth=b1d892c92c629e7f49c57398bd00d2915b446ab9a0ffc8e6d303c87f4844befb&width=910&height=606&smart=true&quality=70" alt="Interior del café">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Hours Section -->
-    <section class="hours">
-        <div class="container">
-            <div class="hours-content">
-                <div class="hours-header">
-                    <h3><i class="fas fa-clock"></i> Horarios de Atención</h3>
-                </div>
-                <div class="hours-grid" id="businessHours">
-                    <div class="hour-item">
-                        <span class="day">Lunes - Viernes</span>
-                        <span class="time">7:00 AM - 9:00 PM</span>
-                    </div>
-                    <div class="hour-item">
-                        <span class="day">Sábado</span>
-                        <span class="time">8:00 AM - 10:00 PM</span>
-                    </div>
-                    <div class="hour-item">
-                        <span class="day">Domingo</span>
-                        <span class="time">9:00 AM - 8:00 PM</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Location Section -->
-    <section id="ubicacion" class="location">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nuestra Ubicación</h2>
-                <p>Fácil de encontrar y llegar</p>
-            </div>
-            <div class="location-content">
-                <div class="location-info">
-                    <div class="address-card">
-                        <h3><i class="fas fa-map-marker-alt"></i> Dirección</h3>
-                        <p class="business-address">
-                            Av. Principal 123<br>
-                            Centro, Ciudad<br>
-                            CP 12345
-                        </p>
-                        <div class="location-actions">
-                            <a href="#" class="btn btn-outline" id="directionsBtn">
-                                <i class="fas fa-directions"></i> Cómo llegar
-                            </a>
-                            <button class="btn btn-outline" id="copyAddressBtn">
-                                <i class="fas fa-copy"></i> Copiar dirección
-                            </button>
-                        </div>
-                    </div>
-                    <div class="transport-info">
-                        <h4>Transporte público</h4>
-                        <ul>
-                            <li><i class="fas fa-bus"></i> Líneas 10, 15, 32</li>
-                            <li><i class="fas fa-train"></i> Estación Central (2 cuadras)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="map-container">
-                    <div id="map" class="map"></div>
-                    <div class="map-placeholder">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <p>Mapa interactivo</p>
-                        <small>Haz clic para ver en Google Maps</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contacto</h2>
-                <p>Mantente conectado con nosotros</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Teléfono</h4>
-                            <a href="tel:+1234567890" class="contact-link">+54 9 3517181975</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <a href="mailto:info@cafecentral.com" class="contact-link">info@cafecentral.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>WhatsApp</h4>
-                            <a href="https://wa.me/+54 9 35171975" class="contact-link">Chatear ahora</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="social-media">
-                    <h3>Síguenos en redes sociales</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link facebook" data-platform="facebook">
-                            <i class="fab fa-facebook-f"></i>
-                            <span>Facebook</span>
-                        </a>
-                        <a href="#" class="social-link instagram" data-platform="instagram">
-                            <i class="fab fa-instagram"></i>
-                            <span>Instagram</span>
-                        </a>
-                        <a href="#" class="social-link whatsapp" data-platform="whatsapp">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>WhatsApp</span>
-                        </a>
-                        <a href="#" class="social-link google" data-platform="google">
-                            <i class="fab fa-google"></i>
-                            <span>Google</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- QR Code Modal -->
-    <div id="qrModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Compartir Tarjeta Digital</h3>
-                <button class="close-modal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="qr-container">
-                    <canvas id="qrcode"></canvas>
-                </div>
-                <p>Escanea este código QR para compartir nuestra tarjeta digital</p>
-                <div class="share-options">
-                    <button class="btn btn-primary" id="downloadQR">
-                        <i class="fas fa-download"></i> Descargar QR
-                    </button>
-                    <button class="btn btn-secondary" id="copyLink">
-                        <i class="fas fa-link"></i> Copiar enlace
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
+        <!-- Header with Navigation -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="nav-logo">
                         <i class="fas fa-coffee"></i>
                         <span>Café Central</span>
                     </div>
-                    <p>Tu lugar favorito para el mejor café de la ciudad</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Enlaces rápidos</h4>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#ubicacion">Ubicación</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                    <ul class="nav-menu">
+                        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                        <li>
+                            <a href="#nosotros" class="nav-link">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#ubicacion" class="nav-link">Ubicación</a>
+                        </li>
+                        <li>
+                            <a href="#contacto" class="nav-link">Contacto</a>
+                        </li>
                     </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Contacto</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123</p>
-                    <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
-                    <p><i class="fas fa-envelope"></i> info@cafecentral.com</p>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="business-photo">
+                    <img
+                        src="https://comprarmaquinariahosteleria.com/blog/wp-content/uploads/2022/08/como-montar-cafeteria-.jpg"
+                        alt="Café Central - Interior acogedor"
+                        id="businessImage"
+                    />
+                    <div class="photo-overlay"></div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="business-name">Café Central</h1>
+                    <p class="business-tagline">
+                        El mejor café de la ciudad te espera
+                    </p>
+                    <div class="hero-badges">
+                        <span class="badge open" id="statusBadge">
+                            <i class="fas fa-clock"></i> Abierto ahora
+                        </span>
+                        <span class="badge rating">
+                            <i class="fas fa-star"></i> 4.8 (250+ reseñas)
+                        </span>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#contacto" class="btn btn-primary">
+                            <i class="fas fa-phone"></i> Contactar
+                        </a>
+                        <button class="btn btn-secondary" id="shareBtn">
+                            <i class="fas fa-share-alt"></i> Compartir
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Café Central. Todos los derechos reservados.</p>
-                <p>Tarjeta Digital creada con ❤️</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="nosotros" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sobre Nosotros</h2>
+                    <p>Conoce más sobre nuestro negocio</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Bienvenidos a Café Central</h3>
+                        <p class="business-description">
+                            Desde 1995, hemos sido el punto de encuentro
+                            favorito de la comunidad. Ofrecemos café de
+                            especialidad, repostería artesanal y un ambiente
+                            acogedor perfecto para trabajar, estudiar o
+                            compartir con amigos.
+                        </p>
+                        <div class="features">
+                            <div class="feature">
+                                <i class="fas fa-wifi"></i>
+                                <span>WiFi Gratis</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-leaf"></i>
+                                <span>Café Orgánico</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-birthday-cake"></i>
+                                <span>Repostería Casera</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-parking"></i>
+                                <span>Estacionamiento</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img
+                            src="https://www.elespectador.com/resizer/v2/ZKHWFCF5SNFNBBTPH23PWUUBVE.jpg?auth=b1d892c92c629e7f49c57398bd00d2915b446ab9a0ffc8e6d303c87f4844befb&width=910&height=606&smart=true&quality=70"
+                            alt="Interior del café"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hours Section -->
+        <section class="hours">
+            <div class="container">
+                <div class="hours-content">
+                    <div class="hours-header">
+                        <h3>
+                            <i class="fas fa-clock"></i> Horarios de Atención
+                        </h3>
+                    </div>
+                    <div class="hours-grid" id="businessHours">
+                        <div class="hour-item">
+                            <span class="day">Lunes - Viernes</span>
+                            <span class="time">7:00 AM - 9:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Sábado</span>
+                            <span class="time">8:00 AM - 10:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Domingo</span>
+                            <span class="time">9:00 AM - 8:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="ubicacion" class="location">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nuestra Ubicación</h2>
+                    <p>Fácil de encontrar y llegar</p>
+                </div>
+                <div class="location-content">
+                    <div class="location-info">
+                        <div class="address-card">
+                            <h3>
+                                <i class="fas fa-map-marker-alt"></i> Dirección
+                            </h3>
+                            <p class="business-address">
+                                Av. Principal 123<br />
+                                Centro, Ciudad<br />
+                                CP 12345
+                            </p>
+                            <div class="location-actions">
+                                <a
+                                    href="#"
+                                    class="btn btn-outline"
+                                    id="directionsBtn"
+                                >
+                                    <i class="fas fa-directions"></i> Cómo
+                                    llegar
+                                </a>
+                                <button
+                                    class="btn btn-outline"
+                                    id="copyAddressBtn"
+                                >
+                                    <i class="fas fa-copy"></i> Copiar dirección
+                                </button>
+                            </div>
+                        </div>
+                        <div class="transport-info">
+                            <h4>Transporte público</h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-bus"></i> Líneas 10, 15, 32
+                                </li>
+                                <li>
+                                    <i class="fas fa-train"></i> Estación
+                                    Central (2 cuadras)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="map-container p-6 m-2">
+                        <div class="map-placeholder" style="text-align: center">
+                           <i class="fas fa-map-marked-alt"></i>
+                            <p style="margin: 0.5rem 0">Mapa interactivo</p>
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d877.155152968423!2d-67.11252911547247!3d-28.4307024802834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942743f41a517963%3A0x5b2b536a73185119!2sGuidos%20Bar!5e0!3m2!1ses-419!2sar!4v1753733062801!5m2!1ses-419!2sar"
+                                width="100%"
+                                height="400"
+                                style="
+                                    border: 0;
+                                    border-radius: 10px;
+                                    margin-top: 1rem;
+                                "
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contacto</h2>
+                    <p>Mantente conectado con nosotros</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Teléfono</h4>
+                                <a href="tel:+1234567890" class="contact-link"
+                                    >+54 9 3517181975</a
+                                >
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a
+                                    href="mailto:info@cafecentral.com"
+                                    class="contact-link"
+                                    >info@cafecentral.com</a
+                                >
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <a
+                                    href="https://wa.me/+54 9 35171975"
+                                    class="contact-link"
+                                    >Chatear ahora</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <h3>Síguenos en redes sociales</h3>
+                        <div class="social-links">
+                            <a
+                                href="#"
+                                class="social-link facebook"
+                                data-platform="facebook"
+                            >
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a
+                                href="#"
+                                class="social-link instagram"
+                                data-platform="instagram"
+                            >
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a
+                                href="#"
+                                class="social-link whatsapp"
+                                data-platform="whatsapp"
+                            >
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a
+                                href="#"
+                                class="social-link google"
+                                data-platform="google"
+                            >
+                                <i class="fab fa-google"></i>
+                                <span>Google</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QR Code Modal -->
+        <div id="qrModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Compartir Tarjeta Digital</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="qr-container">
+                        <canvas id="qrcode"></canvas>
+                    </div>
+                    <p>
+                        Escanea este código QR para compartir nuestra tarjeta
+                        digital
+                    </p>
+                    <div class="share-options">
+                        <button class="btn btn-primary" id="downloadQR">
+                            <i class="fas fa-download"></i> Descargar QR
+                        </button>
+                        <button class="btn btn-secondary" id="copyLink">
+                            <i class="fas fa-link"></i> Copiar enlace
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
 
-    <!-- Scripts -->
-    <script src="js/config.js"></script>
-    <script src="js/main.js"></script>
-</body>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <i class="fas fa-coffee"></i>
+                            <span>Café Central</span>
+                        </div>
+                        <p>Tu lugar favorito para el mejor café de la ciudad</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Enlaces rápidos</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#nosotros">Nosotros</a></li>
+                            <li><a href="#ubicacion">Ubicación</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contacto</h4>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> Av. Principal
+                            123
+                        </p>
+                        <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
+                        <p>
+                            <i class="fas fa-envelope"></i> info@cafecentral.com
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>
+                        &copy; 2025 Café Central. Todos los derechos reservados.
+                    </p>
+                    <p>Tarjeta Digital creada con ❤️</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="js/config.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
